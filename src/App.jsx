@@ -1,15 +1,14 @@
 import "./App.css";
-import Title from "./Title";
+import ProductTab from "./ProductTab";
+
 
 // function Title() {
 //   return <h1> I am the Title</h1>
 // }
-
-
 function App() {
   return (
     <div>
-    <Title/>
+    <ProductTab/>
   </div>
   )
 }
