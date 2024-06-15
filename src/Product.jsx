@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
+import Price from "./Price";
 import "./Product.css";
 
-function Product({ title, price,  }) {
-  // const list = features.map((feature)=><li>{feature}</li>)
-let styles = {backgroundColor :price >30000 ? "pink" : ""};
+function Product({ title,idx}) {
+  let oldPrice = ["12,4555", "56454","54564","4545"]
+  let newPrice = ["14,4555", "76454","14564","78545"]
+  let description = ["8,000 DPI","intuit s","ipad","wifi"]
   return (
-    <div className="Product" style={styles}>
-      <h3>{title}</h3>
-      <h3>{price}</h3>
-      {price > 30000 &&  <p>Discount of 5%</p>}
+    <div className="Product">
+      <p>{title}</p>
+      <p>{description[idx]}</p>
+     <Price oldPrice={oldPrice[idx]} newPrice={newPrice[idx]}/>
      
-       
-    </div>
+  </div>
   );
 }
 

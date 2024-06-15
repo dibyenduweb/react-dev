@@ -1,5 +1,6 @@
 import "./App.css";
-import ProductTab from "./ProductTab";
+import Button from "./Button";
+
 
 
 // function Title() {
@@ -7,9 +8,9 @@ import ProductTab from "./ProductTab";
 // }
 function App() {
   return (
-    <div>
-    <ProductTab/>
-  </div>
+    <>
+    <Button/>
+    </>
   )
 }
 
